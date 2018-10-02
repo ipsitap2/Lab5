@@ -9,8 +9,9 @@ import java.util.Random;
  */
 public class BankAccount {
 
-    /*
+    /**
      * You may want to use this to distinguish between different kinds of accounts.
+     *
      */
     public enum BankAccountType {
         CHECKINGS,

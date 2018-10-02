@@ -8,13 +8,40 @@
  * @see <a href="https://cs125.cs.illinois.edu/lab/5/">Lab 5 Description</a>
  */
 public class Bank {
+    /**
+     */
+    private String bankName;
 
-    public String bankName;
+    /**
+     * setter
+     * @param setName sets name of bank
+     */
 
-    public Bank() {
-        bankName = "Illini Bank";
+    public void setAge(final String setName) {
+        this.bankName = setName;
     }
 
+    /**
+     * getter
+     * @return
+     */
+    public String getName() {
+        return this.bankName;
+    }
+    /**
+     * sets bankName to "Illini Bank" if nothing is given
+     */
+    public Bank() {
+
+        bankName = "Illini Bank";
+    }
+    /**
+     * sets bankName to name
+     * @param name is the name of the bank
+     */
+    Bank(final String name) {
+        bankName = name;
+    }
     /**
      * Withdraw money from an account.
      * <p>
